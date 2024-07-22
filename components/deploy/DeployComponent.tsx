@@ -4,11 +4,9 @@ import React from "react";
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
-      <Navbar />
+    <div className="w-full flex justify-center items-center">
       <div className="flex w-[98%]">
-        <Sidebar />
-        {children}
+        <div className="w-full">{children}</div>
       </div>
     </div>
   );
@@ -17,7 +15,10 @@ function Layout({ children }: { children: React.ReactNode }) {
 const Deploy = () => {
   return (
     <Layout>
-      <div className="w-[80%] bg-primary overflow-y-auto flex">Deploy</div>
+      <div className="flex w-full gap-4">
+        <Sidebar />
+        <div className="w-[80%] bg-primary overflow-y-auto">Deploy</div>
+      </div>
     </Layout>
   );
 };
