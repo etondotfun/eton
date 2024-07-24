@@ -21,17 +21,17 @@ const CardHOF = ({
           <Image width={40} height={40} src={image} alt="icon" />
         </div>
 
-        <div className="flex flex-col w-[90%]">
-          <div className="text-white font-semibold text-lg flex justify-between">
+        <div className="flex flex-col gap-1 w-[90%]">
+          <div className="text-white font-semibold flex justify-between">
             <div>{name}</div>
             <div>ATH: <span>{ath}</span></div>
           </div>
           <div className="flex justify-between items-center gap-4">
             <div className="text-white font-semibold">
-              CA: <span className="text-primary font-semibold">{ca}</span>
+              CA: <span className="text-tonprimary font-semibold">{ca}</span>
             </div>
             <div className="text-white font-semibold">
-              Listed: <span className="text-primary">{dex}</span>
+              Listed: <span className="text-tonprimary">{dex}</span>
             </div>
           </div>
         </div>

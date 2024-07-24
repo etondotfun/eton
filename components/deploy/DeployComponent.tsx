@@ -17,7 +17,9 @@ const Deploy = () => {
     <Layout>
       <div className="flex w-full gap-4">
         <Sidebar />
-        <div className="w-[80%] bg-primary overflow-y-auto">Deploy</div>
+        <div className="w-[90%] overflow-y-auto">
+          <div>Deploy</div>
+        </div>
       </div>
     </Layout>
   );

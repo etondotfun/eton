@@ -16,7 +16,9 @@ const HomeComponent = () => {
     <Layout>
       <div className="flex w-full gap-4">
         <Sidebar />
-        <div className="w-[80%] bg-primary overflow-y-auto">Home</div>
+        <div className="w-[90%] overflow-y-auto">
+          <div>Home</div>
+        </div>
       </div>
     </Layout>
   );

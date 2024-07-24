@@ -16,7 +16,9 @@ const Profile = () => {
     <Layout>
       <div className="flex w-full gap-4">
         <Sidebar />
-        <div className="w-[80%] bg-primary overflow-y-auto">Profile</div>
+        <div className="w-[90%] overflow-y-auto">
+          <div>Profile</div>
+        </div>
       </div>
     </Layout>
   );

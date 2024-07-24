@@ -4,7 +4,7 @@ import CardHOF from "./cards/CardHOF";
 const Navbar = () => {
   return (
     <div className="w-full flex justify-center sticky top-0 z-50">
-      <div className="h-[6.25rem] w-[98%] flex justify-between items-center bg-gradient-to-r from-[#2D83EC] to-[#1AC9FF] p-4 my-4 rounded-2xl">
+      <div className=" w-[98%] flex justify-between items-center bg-[#333333] p-4 my-4 rounded-2xl">
         <div className="text-secondary text-2xl font-bold w-[10%] flex justify-center">
           Logo
         </div>
