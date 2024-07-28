@@ -34,15 +34,15 @@ const Sidebar = () => {
   const pathName = usePathname();
 
   return (
-    <div className="bg-[#333333] w-[10%] h-[77vh] overflow-y-auto p-4 sticky top-[8.25rem] rounded-2xl flex flex-col justify-between">
+    <div className="bg-gradient-to-r from-[#2D83EC] to-[#1AC9FF] w-[10%] h-[77vh] overflow-y-auto p-4 sticky top-[8.25rem] rounded-2xl flex flex-col justify-between">
       <ul className="space-y-3">
         {menus.map((menu) => (
           <Link
             key={menu.title}
             href={menu.href}
-            className={`flex items-center justify-center py-3 px-4 rounded-2xl cursor-pointer hover:bg-primary hover:text-black ${
+            className={`flex items-center justify-center py-3 px-4 rounded-2xl cursor-pointer hover:bg-primary hover:text-[#1AC9FF] ${
               pathName === menu.href
-                ? "bg-primary text-black"
+                ? "bg-primary text-[#1AC9FF]"
                 : "bg-black/[0.3] text-primary"
             } `}
           >
