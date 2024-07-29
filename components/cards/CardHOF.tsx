@@ -28,10 +28,10 @@ const CardHOF = ({
           </div>
           <div className="flex justify-between items-center gap-4">
             <div className="text-white font-semibold">
-              CA: <span className="text-tonprimary font-semibold">{ca}</span>
+              CA: <span className="text-textColor font-semibold">{ca}</span>
             </div>
             <div className="text-white font-semibold">
-              Listed: <span className="text-tonprimary">{dex}</span>
+              Listed: <span className="text-textColor">{dex}</span>
             </div>
           </div>
         </div>

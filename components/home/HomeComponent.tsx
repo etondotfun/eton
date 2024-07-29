@@ -1,5 +1,7 @@
 "use client";
 import Sidebar from "../Sidebar";
+import Buys from "./Buys";
+import Top3 from "./Top3";
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,8 +18,9 @@ const HomeComponent = () => {
     <Layout>
       <div className="flex w-full gap-4">
         <Sidebar />
-        <div className="w-[90%] overflow-y-auto">
-          <div>Home</div>
+        <div className="w-[90%] overflow-y-auto flex flex-col gap-4">
+          <Buys />
+          <Top3 />
         </div>
       </div>
     </Layout>
