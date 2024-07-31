@@ -1,5 +1,6 @@
 "use client";
 import Sidebar from "../Sidebar";
+import AllTokens from "./AllTokens";
 import Buys from "./Buys";
 import Top3 from "./Top3";
 
@@ -18,9 +19,11 @@ const HomeComponent = () => {
     <Layout>
       <div className="flex w-full gap-4">
         <Sidebar />
-        <div className="w-[90%] overflow-y-auto flex flex-col gap-4">
+        <div className="w-[90%] overflow-y-auto flex flex-col gap-4 mb-8">
           <Buys />
           <Top3 />
+          <div className="bg-textColor h-[20px] rounded-full"></div>
+          <AllTokens />
         </div>
       </div>
     </Layout>

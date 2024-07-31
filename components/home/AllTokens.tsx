@@ -1,11 +1,11 @@
 import React from "react";
-import CardTop3 from "../cards/CardTop3";
+import CardTokens from "../cards/CardTokens";
 
-const Top3 = () => {
+const AllTokens = () => {
   return (
-    <div className="w-full flex justify-center items-center mb-10">
+    <div className="w-full flex justify-center items-center">
       <div className="flex items-center gap-20 w-[98%] flex-wrap">
-        <CardTop3
+        <CardTokens
           name="New Token"
           image={"/eth.svg"}
           ca={"addr..0123"}
@@ -14,7 +14,7 @@ const Top3 = () => {
           mc={"200k"}
           lp={"4.85k"}
         />
-        <CardTop3
+        <CardTokens
           name="New Token"
           image={"/eth.svg"}
           ca={"addr..0123"}
@@ -23,7 +23,25 @@ const Top3 = () => {
           mc={"200k"}
           lp={"4.85k"}
         />
-        <CardTop3
+        <CardTokens
+          name="New Token"
+          image={"/eth.svg"}
+          ca={"addr..0123"}
+          devaddr={"addr..0123"}
+          vol={"100k"}
+          mc={"200k"}
+          lp={"4.85k"}
+        />
+        <CardTokens
+          name="New Token"
+          image={"/eth.svg"}
+          ca={"addr..0123"}
+          devaddr={"addr..0123"}
+          vol={"100k"}
+          mc={"200k"}
+          lp={"4.85k"}
+        />
+        <CardTokens
           name="New Token"
           image={"/eth.svg"}
           ca={"addr..0123"}
@@ -37,4 +55,4 @@ const Top3 = () => {
   );
 };
 
-export default Top3;
+export default AllTokens;

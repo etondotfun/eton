@@ -1,7 +1,7 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
-const CardTop3 = ({
+const CardTokens = ({
   name,
   image,
   ca,
@@ -98,4 +98,4 @@ const CardTop3 = ({
   );
 };
 
-export default CardTop3;
+export default CardTokens;
