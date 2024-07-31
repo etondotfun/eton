@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGripLinesVertical } from "react-icons/fa";
 import CardBuys from "../cards/CardBuys";
+import Link from "next/link";
 
 const Buys = () => {
   return (

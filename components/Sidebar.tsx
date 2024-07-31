@@ -34,7 +34,7 @@ const Sidebar = () => {
   const pathName = usePathname();
 
   return (
-    <div className="bg-[#333333] w-[10%] h-[77vh] overflow-y-auto p-4 sticky top-[8.25rem] rounded-2xl flex flex-col justify-between">
+    <div className="bg-[#333333] w-[10%] h-[77vh] overflow-y-auto p-4 sticky top-[8.5rem] rounded-2xl flex flex-col justify-between">
       <ul className="space-y-3">
         {menus.map((menu) => (
           <Link

@@ -4,12 +4,9 @@ import Profile from "@/components/profile/ProfileComponent";
 const page = () => {
   return (
     <main className="bg-primary min-h-screen">
-      <div
-        className="bg-cover bg-center w-full h-full relative"
-        // style={{ backgroundImage: "url('/background.jpg')" }}
-      >
+      <div className="w-full min-h-screen relative">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-25"
+          className="absolute inset-0 bg-cover bg-center bg-fixed opacity-25"
           // style={{ backgroundImage: "url('/background.jpg')" }}
           // style={{ backgroundImage: "url('/background1.jpg')" }}
           style={{ backgroundImage: "url('/background2.jpg')" }}
