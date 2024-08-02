@@ -1,5 +1,6 @@
 import Sidebar from "@/components/Sidebar";
 import React from "react";
+import CardReferral from "../cards/CardReferral";
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,8 +17,19 @@ const Referrals = () => {
     <Layout>
       <div className="flex w-full gap-4">
         <Sidebar />
-        <div className="w-[90%] overflow-y-auto">
-          <div>Referrals</div>
+        <div className="w-[90%] relative flex flex-col items-center gap-6 pb-8 overflow-y-auto">
+          <CardReferral
+            reflink={"https://io.take.referral=?/bbjkhssw-wswq12y"}
+            referrals={0}
+            commission={0}
+            refhits={0}
+          />
+          <div className="text-4xl abril font-bold text-gray-600">
+            Reffered Users
+          </div>
+          <div className="w-[80%]">
+            <div className="text-gray-600 font-semibold text-xl">No Referrals Yet</div>
+          </div>
         </div>
       </div>
     </Layout>
