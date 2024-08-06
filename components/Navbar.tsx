@@ -1,15 +1,25 @@
-import React from "react";
+"use client";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import CardHOF from "./cards/CardHOF";
+import WalletsProvider from "./Wallets";
 
 const Navbar = () => {
+  const [Toggle, setToggle] = useState(true);
+
+  const handleClick = () => {
+    setToggle(!Toggle);
+  };
+
   return (
     <div className="w-full flex justify-center sticky top-0 z-50">
-      <div className=" w-[98%] flex justify-between items-center bg-[#333333] p-4 my-4 rounded-2xl">
-        <div className="text-secondary text-2xl font-bold w-[10%] flex justify-center">
+      <div className="w-[95%] md:w-[98%] flex justify-between items-center bg-[#333333] p-4 my-4 rounded-2xl">
+        <div className="text-secondary text-2xl font-bold md:w-[10%] flex justify-center">
           Logo
         </div>
 
-        <div className="w-[90%]">
+        <div className="w-[90%] hidden md:flex overflow-hidden">
           <div className="use-section flex justify-center items-center">
             <div className="use-container flex items-center w-full">
               {/* <div className="use-text-head text-4xl font-bold bg-[rgba(0,0,0,0.4)] px-4 py-2 rounded-xl">
@@ -91,6 +101,47 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {Toggle ? (
+          <Image
+            width={100}
+            height={100}
+            src="/hamburger (1).png"
+            alt=""
+            className="z-0 md:hidden ml-4 w-[30px] h-[30px]"
+            onClick={handleClick}
+          />
+        ) : (
+          <Image
+            width={100}
+            height={100}
+            src="/close.png"
+            alt=""
+            className="z-0 md:hidden ml-4 w-[30px] h-[30px]"
+            onClick={handleClick}
+          />
+        )}
+
+        <div
+          className={`delay-300 md:hidden flex text-center gap-6 py-12 px-6 h-screen bg-black/90 w-full fixed top-[85px] text-primary  flex-col ${
+            Toggle ? "right-[100%]" : "left-[100%]}"
+          }`}
+        >
+          <Link href="/">
+            <p>Home</p>
+          </Link>
+          <Link href="/profile">
+            <p>Profile</p>
+          </Link>
+          <Link href="/referrals">
+            <p>Referrals</p>
+          </Link>
+          <Link href="/deploy">
+            <p>Deploy</p>
+          </Link>
+
+          <WalletsProvider />
         </div>
       </div>
     </div>

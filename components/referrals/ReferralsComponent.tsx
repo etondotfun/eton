@@ -24,11 +24,11 @@ const Referrals = () => {
             commission={0}
             refhits={0}
           />
-          <div className="text-4xl abril font-bold text-gray-600">
+          <div className="text-4xl abril font-bold text-gray-700">
             Reffered Users
           </div>
           <div className="w-[80%]">
-            <div className="text-gray-600 font-semibold text-xl">No Referrals Yet</div>
+            <div className="text-gray-700 font-semibold text-xl">No Referrals Yet</div>
           </div>
         </div>
       </div>

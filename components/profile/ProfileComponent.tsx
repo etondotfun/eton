@@ -1,5 +1,6 @@
-import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import CardProfile from "../cards/CardProfile";
+import CreateTokenButton from "../CreateTokenButton";
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -16,8 +17,18 @@ const Profile = () => {
     <Layout>
       <div className="flex w-full gap-4">
         <Sidebar />
-        <div className="w-[90%] overflow-y-auto">
-          <div>Profile</div>
+        <div className="w-[90%] relative flex flex-col items-center gap-6 overflow-y-auto pb-4">
+          <CreateTokenButton />
+          <CardProfile
+            img={"/background2.jpg"}
+            user="f2fqu2"
+            reflink={"https://vkaevsjmhvjqhkbwdvdkj217tbdw"}
+            earned={0}
+            withdraw={0}
+            referrals={0}
+            tokensCreated={0}
+            transaction={0}
+          />
         </div>
       </div>
     </Layout>
