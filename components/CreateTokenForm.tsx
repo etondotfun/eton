@@ -3,8 +3,8 @@ import { FaImage } from "react-icons/fa6";
 
 const CreateTokenForm = () => {
   return (
-    <div className="flex flex-col items-center w-[50%] mt-6 bg-tonprimary p-4 rounded-2xl">
-      <div className="flex flex-col gap-4 z-10 w-full text-lg text-primary">
+    <div className="flex flex-col items-center w-[90%] md:w-[50%] mt-3 md:mt-6 bg-tonprimary p-4 rounded-2xl">
+      <div className="flex flex-col gap-2 sm:gap-4 z-10 w-full text-lg text-primary">
         <label className="cursor-pointer p-3 bg-textColor rounded-xl text-center flex gap-3 justify-center items-center">
           <FaImage />
           Upload Image
