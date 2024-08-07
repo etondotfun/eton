@@ -17,7 +17,7 @@ const Referrals = () => {
     <Layout>
       <div className="flex w-full gap-4">
         <Sidebar />
-        <div className="w-[90%] relative flex flex-col items-center gap-6 pb-8 overflow-y-auto">
+        <div className="w-full md:w-[90%] relative flex flex-col items-center gap-6 pb-8 overflow-y-auto">
           <CardReferral
             reflink={"https://io.take.referral=?/bbjkhssw-wswq12y"}
             referrals={0}

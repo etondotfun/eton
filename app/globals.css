@@ -134,3 +134,28 @@
 .btn {
   box-shadow: 0 0 0 4px #fbfbfb;
 }
+
+@media screen and (max-width: 640px) {
+  .card .box:nth-child(1)::before {
+    top: 51px;
+    width: 15px;
+  }
+
+  .card .box:nth-child(1)::after {
+    bottom: 0px;
+    left: 24px;
+    width: 15px;
+    height: 10px;
+  }
+
+  .card .box:nth-child(2)::before {
+    top: 56px;
+    left: 0px;
+    box-shadow: -3px -4px #fbfbfb;
+  }
+
+  .card .box:nth-child(2)::after {
+    left: 39px;
+    box-shadow: -8px -8px #fbfbfb;
+  }
+}

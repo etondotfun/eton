@@ -36,7 +36,7 @@ const CardProfile = ({
   };
 
   return (
-    <div className="flex flex-col items-center gap-3 w-[75%] bg-tonprimary p-4 rounded-2xl">
+    <div className="flex flex-col items-center gap-3 w-[95%] md:w-[75%] bg-tonprimary p-4 rounded-2xl">
       <div className="w-full">
         <div className="w-[80px] h-[80px]">
           <Image
@@ -77,7 +77,7 @@ const CardProfile = ({
         </div>
 
         <div className="w-full border border-textColor/[0.2] p-2 rounded-lg">
-          <p className="text-primary text-sm">{reflink}</p>
+          <p className="text-primary text-sm overflow-auto">{reflink}</p>
         </div>
 
         <button

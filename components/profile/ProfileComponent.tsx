@@ -15,9 +15,9 @@ function Layout({ children }: { children: React.ReactNode }) {
 const Profile = () => {
   return (
     <Layout>
-      <div className="flex w-full gap-4">
+      <div className="flex w-full justify-center gap-4">
         <Sidebar />
-        <div className="w-[90%] relative flex flex-col items-center gap-6 overflow-y-auto pb-4">
+        <div className="w-[98%] md:w-[90%] relative flex flex-col items-center gap-6 overflow-y-auto pb-4">
           <CreateTokenButton />
           <CardProfile
             img={"/background2.jpg"}
